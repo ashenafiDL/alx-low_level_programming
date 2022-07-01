@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	char c;
-	char d;
+	int c;
+	int d;
 
 	c = 48;
 	while (c <= 57)
@@ -19,8 +19,10 @@ int main(void)
 			putchar(c);
 			putchar(d);
 			if (c != 56)
-			putchar(44);
-			putchar(32);
+			{
+				putchar(44);
+				putchar(32);
+			}
 			d++;
 		}
 		c++;
