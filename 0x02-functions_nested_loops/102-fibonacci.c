@@ -11,7 +11,6 @@ void first_50_fibonacci(void)
 
 	n[0] = 1;
 	n[1] = 2;
-
 	for (i = 0; i <= 50; i++)
 	{
 		if (i == 0 || i == 1)
@@ -20,7 +19,7 @@ void first_50_fibonacci(void)
 		}
 		else
 		{
-			n[i] = n[i-1] + n[i-2];
+			n[i] = n[i - 1] + n[i - 2];
 			printf("%d", n[i]);
 		}
 		if (i != 50)
