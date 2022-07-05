@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	int n[50];
-	int i;
+	long int n[50];
+	long int i;
 
 	n[0] = 1;
 	n[1] = 2;

@@ -21,8 +21,8 @@ int main(void)
 			break;
 		if (n[i] % 2 == 0)
 			sum += n[i];
-		printf("%d", sum);
-		printf("\n");
 	}
+	printf("%d", sum);
+	printf("\n");
 	return (0);
 }
