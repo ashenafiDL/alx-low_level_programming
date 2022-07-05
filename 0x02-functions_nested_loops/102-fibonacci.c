@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * first_50_fibonacci - display first 50 fibonacci numbers
+ * main - display first 50 fibonacci numbers
+ *
+ * Return: 0
  */
-void first_50_fibonacci(void)
+int main(void)
 {
 	int n[50];
 	int i;
@@ -29,4 +31,5 @@ void first_50_fibonacci(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }

@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * below_1024 - display sum of multiples of 3 and 5 below 1024
+ * main - display sum of multiples of 3 and 5 below 1024
+ *
+ * Return: 0
  */
-void below_1024(void)
+int main(void)
 {
 	int n, sum;
 
@@ -16,4 +18,5 @@ void below_1024(void)
 			sum += n;
 	}
 	printf("%d\n", sum);
+	return (0);
 }

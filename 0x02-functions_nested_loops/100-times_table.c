@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * print_times_table - display times table of a number
+ * main - display times table of a number
  *
  * @n: the input number
+ *
+ * Return: 0
  */
-void print_times_table(int n)
+int main(int n)
 {
 	int a, b, c;
 
@@ -37,7 +39,7 @@ void print_times_table(int n)
 					_putchar((c / 10) + '0');
 					_putchar((c % 10) + '0');
 				}
-				if (b == n)
+				if (b != n)
 				{
 					_putchar(',');
 					_putchar(' ');
@@ -46,4 +48,5 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
+	return (0);
 }

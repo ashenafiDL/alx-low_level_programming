@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * even_fibonacci - sum of even fibonacci numbers
+ * main - sum of even fibonacci numbers
+ *
+ * Return: 0
  */
-void even_fibonacci(void)
+int main(void)
 {
 	int n[50];
 	int i, sum = 3;
@@ -22,4 +24,5 @@ void even_fibonacci(void)
 		printf("%d", sum);
 		printf("\n");
 	}
+	return (0);
 }
