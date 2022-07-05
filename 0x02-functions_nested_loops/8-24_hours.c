@@ -1,4 +1,4 @@
-#include "man.h"
+#include "main.h"
 
 /**
  * jack_bauer - displays every minute of the day
