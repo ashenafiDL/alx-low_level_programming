@@ -9,7 +9,7 @@
 int main(void)
 {
 	int n[50];
-	int i, sum = 3;
+	int i, sum = 2;
 
 	n[0] = 1;
 	n[1] = 2;
