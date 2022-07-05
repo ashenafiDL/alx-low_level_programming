@@ -13,7 +13,7 @@ int main(void)
 
 	n[0] = 1;
 	n[1] = 2;
-	for (i = 1; i <= 50; i++)
+	for (i = 0; i <= 49; i++)
 	{
 		if (i == 0 || i == 1)
 		{
