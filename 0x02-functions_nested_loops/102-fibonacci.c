@@ -17,12 +17,12 @@ int main(void)
 	{
 		if (i == 0 || i == 1)
 		{
-			printf("%d", n[i]);
+			printf("%ld", n[i]);
 		}
 		else
 		{
 			n[i] = n[i - 1] + n[i - 2];
-			printf("%d", n[i]);
+			printf("%ld", n[i]);
 		}
 		if (i != 50)
 		{
