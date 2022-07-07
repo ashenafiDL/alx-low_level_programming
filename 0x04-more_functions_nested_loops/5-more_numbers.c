@@ -18,7 +18,7 @@ void more_numbers(void)
 			{
 				case 58:
 					_putchar(49);
-					_putchar(49);
+					_putchar(48);
 					break;
 				case 59:
 					_putchar(49);
