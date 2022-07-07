@@ -6,42 +6,23 @@
  */
 void more_numbers(void)
 {
-	int a, b;
+	char a, b;
+	int c;
 
-	a = 1;
-	while (a <= 14)
+	c = 0;
+	while (c < 10)
 	{
-		b = 48;
-		while (b <= 62)
+		for (a = 0; a <= 14; a++)
 		{
-			switch (b)
+			b = b;
+			if (a > 9)
 			{
-				case 58:
-					_putchar(49);
-					_putchar(48);
-					break;
-				case 59:
-					_putchar(49);
-					_putchar(49);
-					break;
-				case 60:
-					_putchar(49);
-					_putchar(50);
-					break;
-				case 61:
-					_putchar(49);
-					_putchar(51);
-					break;
-				case 62:
-					_putchar(49);
-					_putchar(52);
-					break;
-				default:
-					_putchar(b);
+				_putchar('1');
+				b = a % 10;
 			}
-			b++;
+			_putchar('0' + b);
 		}
-		a++;
 		_putchar('\n');
+		i++;
 	}
 }
