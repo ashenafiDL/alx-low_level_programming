@@ -25,3 +25,11 @@ void fizz_buzz(void)
 	}
 	putchar('\n');
 }
+/**
+ * main - entry point of the program
+ * Retuen: always 0
+ */
+int main(void)
+{
+	fizz_buzz();
+}
