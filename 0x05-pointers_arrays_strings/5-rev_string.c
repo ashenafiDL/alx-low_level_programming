@@ -19,7 +19,7 @@ void rev_string(char *s)
 	mid = len / 2;
 	while (mid >= 0)
 	{
-		fisrt = s[len - mid];
+		first = s[len - mid];
 		last = s[mid];
 		s[mid] = first;
 		s[len - mid] = last;
