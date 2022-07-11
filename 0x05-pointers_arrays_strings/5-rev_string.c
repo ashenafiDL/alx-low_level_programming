@@ -6,23 +6,23 @@
  */
 void rev_string(char *s)
 {
-	char temp[sizeof(s) + 1];
-	int len, i;
+	char first, last;
+	int len, mid, i;
 
 	i = 0;
-	/* copy the value of s to tempotary string */
 	while (s[i] != '\0')
 	{
-		temp[i] = s[i];
 		i++;
 	}
 
-	i = 0;
-	len = sizeof(s);
-	while (len >= 0)
+	len = i - 1;
+	mid = len / 2;
+	while (mid >= 0)
 	{
-		s[i] = temp[len];
-		len--;
-		i++;
+		fisrt = s[len - mid];
+		last = s[mid];
+		s[mid] = first;
+		s[len - mid] = last;
+		mid--;
 	}
 }
