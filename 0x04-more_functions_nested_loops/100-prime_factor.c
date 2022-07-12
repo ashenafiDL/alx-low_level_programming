@@ -19,7 +19,7 @@ int main(void)
 			max = i;
 		}
 	}
-	if (n > max)
+	if (n > 2)
 		max = n;
 	printf("%ld", max);
 	return (0);
