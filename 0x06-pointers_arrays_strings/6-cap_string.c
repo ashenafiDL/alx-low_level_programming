@@ -33,7 +33,11 @@ char *cap_string(char *str)
 	i = 1;
 	while (str[i] != '\0')
 	{
-		if ((str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '.') && is_lower(str[i + 1]))
+		if ((str[i] == ' '
+			|| str[i] == '\n'
+			|| str[i] == '\t'
+			|| str[i] == '.')
+				&& is_lower(str[i + 1]))
 		{
 			str[i + 1] -= 32;
 		}
