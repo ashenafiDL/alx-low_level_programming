@@ -7,7 +7,7 @@
  *
  * Return: length of accept
  */
-unsigned int _strspn(char *s, har *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, count;
 
