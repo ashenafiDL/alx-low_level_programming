@@ -10,10 +10,7 @@
  * Return: on success 1
  * On error, -1 is returned, and errno is set appropriately
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
