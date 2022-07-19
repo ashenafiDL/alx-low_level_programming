@@ -1,6 +1,19 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <unistd.h>
+
+/**
+ * _putchar - write the character c to stdout
+ * @c: the character to print
+ *
+ * Return: on success 1
+ * On error, -1 is returned, and errno is set appropriately
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
