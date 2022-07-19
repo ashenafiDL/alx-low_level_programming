@@ -24,7 +24,7 @@ int main(void)
 			n[i] = n[i - 1] + n[i - 2];
 			printf("%ld", n[i]);
 		}
-		if (i != 50)
+		if (i != 49)
 		{
 			putchar(',');
 			putchar(' ');
