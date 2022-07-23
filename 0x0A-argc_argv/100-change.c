@@ -13,8 +13,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		c = atoi(argv[1]);
-		while (c > 0)
+		for (c = atoi(argv[1]); c > 0;)
 		{
 			if (c % 25 < c)
 			{
