@@ -1,5 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
+
+/**
+ * size - length of string
+ * @s: string
+ * Return: lenght of s
+ */
+int size(char *s)
+{
+	int i;
+
+	i = 0;
+	for (; s[i] != '\0'; i++)
+		;
+
+	return (i);
+}
+
 /**
  * str_concat - concatenates two strings
  * @s1: string 1
@@ -9,26 +26,30 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *arr;
-	int i, j;
+	int size1, size2, i;
 
-	arr = malloc(sizeof(*s2) + sizeof(*s2));
+	if (s1 == NULL)
+		s1 = '\0';
+	if (s2 == NULL)
+		s2 = '\0';
+
+	size1 = size(s1);
+	size2 = size(s2);
+
+	arr = malloc((size1 + size2) * sizeof(char) + 1);
 	if (arr == NULL)
 		return (NULL);
 
 	i = 0;
-	while (s1[i] != '\0')
+	while (i <= size1 + size2)
 	{
-		arr[i] = s1[i];
+		if (i < size1)
+			arr[i] = s1[i];
+		else
+			arr[i] = s2[i - size1];
 		i++;
 	}
 
-	j = 0;
-	while (s2[j] != '\0')
-	{
-		arr[i] = s2[j];
-		i++;
-		j++;
-	}
 	arr[i] = '\0';
 	return (arr);
 }
