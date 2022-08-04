@@ -53,15 +53,19 @@ void print_all(const char * const format, ...)
 	int i, j;
 	char *sep;
 	va_list list;
+	printTypeStruct printType[5];
 
 	sep = "";
-	printTypeStruct printType[] = {
-		{"i", print_int},
-		{"f", print_float},
-		{"c", print_char},
-		{"s", print_str},
-		{NULL, NULL}
-	};
+	printType[0].type = "i";
+	printType[0].printer = print_int;
+	printType[1].type = "f";
+	printType[1].printer = print_float;
+	printType[2].type = "c";
+	printType[2].printer = print_char;
+	printType[3].type = "s";
+	printType[3].printer = print_str;
+	printType[4].type = NULL;
+	printType[4].printer = NULL;
 
 	va_start(list, format);
 	i = 0;
