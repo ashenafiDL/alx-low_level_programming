@@ -12,11 +12,17 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	int index;
+	hash_node_t *node;
 
 	if (ht == NULL)
 		return (NULL);
 	index = hash_djb2((unsigned char *)key) % ht->size;
 	if (ht->array[index] == NULL)
 		return (NULL);
-	return (ht->array[index]->value);
+
+	node = ht->array[index];
+	while (node && strcmp(node->key, key) != 0)
+		node = node->next;
+
+	return ((node == NULL) ? NULL : node->value);
 }
